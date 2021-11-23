@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="1736e6e1-755c-4182-87f2-85a38594e17c" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="Delete User" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="1736e6e1-755c-4182-87f2-85a38594e17cfileName">Delete-User</con:setting>
+  </con:settings>
+  <con:testStep type="restrequest" name="REST Request" id="329fb57b-a575-4a8c-ab1c-a78850ecec7a">
+    <con:settings/>
+    <con:config service="GetUser" resourcePath="/api/v1/user/{id}" methodName="Method 4" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:restRequest name="REST Request" id="5ba55e20-800e-4bf6-bf2e-23366cf2ceb1" mediaType="application/json" postQueryString="false">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:endpoint>https://www.test-insurance.com</con:endpoint>
+        <con:request/>
+        <con:originalUri>https://www.test-insurance.com/api/v1/user/4424</con:originalUri>
+        <con:assertion type="Valid HTTP Status Codes" id="0d5cf82b-6251-4bdb-af46-fb085d4ba314" name="Valid HTTP Status Codes">
+          <con:settings/>
+          <con:configuration>
+            <codes>200</codes>
+          </con:configuration>
+        </con:assertion>
+        <con:assertion type="Response SLA Assertion" id="305a5ea8-388c-447b-8351-3b7f59703099" name="Response SLA">
+          <con:configuration>
+            <SLA>2000</SLA>
+          </con:configuration>
+        </con:assertion>
+        <con:assertion type="JsonPath Match" id="ee64f201-ea44-4bda-81c9-a0296635e3ec" name="Match content of [code]">
+          <con:configuration>
+            <path>$['meta']['code']</path>
+            <content>200</content>
+            <allowWildcards>false</allowWildcards>
+            <ignoreNamspaceDifferences>false</ignoreNamspaceDifferences>
+            <ignoreComments>false</ignoreComments>
+          </con:configuration>
+        </con:assertion>
+        <con:assertion type="JsonPath Match" id="056c317b-95e9-4f29-a737-2775a5276e2c" name="Match content of [status]">
+          <con:configuration>
+            <path>$['meta']['status']</path>
+            <content>"success"</content>
+            <allowWildcards>false</allowWildcards>
+            <ignoreNamspaceDifferences>false</ignoreNamspaceDifferences>
+            <ignoreComments>false</ignoreComments>
+          </con:configuration>
+        </con:assertion>
+        <con:assertion type="JsonPath Match" id="852e9eca-689a-4d16-82a0-84a5e9bc7357" name="Match content of [data]">
+          <con:configuration>
+            <path>$['data']</path>
+            <content>"Record successfuly deleted"</content>
+            <allowWildcards>false</allowWildcards>
+            <ignoreNamspaceDifferences>false</ignoreNamspaceDifferences>
+            <ignoreComments>false</ignoreComments>
+          </con:configuration>
+        </con:assertion>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:parameters>
+          <con:entry key="id" value="${#[Regression Test Sute#Get User - Positive Test Case#REST Request]#Response#$['data']['account']['accountId']}"/>
+        </con:parameters>
+        <con:parameterOrder>
+          <con:entry>id</con:entry>
+        </con:parameterOrder>
+        <con:environmentSpec>
+          <con:entry environmentId="4c23f13a-1549-4669-8293-16e9832728e8">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testCase>

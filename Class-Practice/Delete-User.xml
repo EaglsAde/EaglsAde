@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="8425cf17-8f51-43d0-af32-6269ef804cd9" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="Delete User" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="8425cf17-8f51-43d0-af32-6269ef804cd9fileName">Delete-User</con:setting>
+  </con:settings>
+  <con:testStep type="restrequest" name="REST Request" id="c0b2939b-8855-4004-843b-4b07c4110dfa">
+    <con:settings/>
+    <con:config service="GetUser" resourcePath="/api/v1/user/{id}" methodName="Method 4" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:restRequest name="REST Request" id="5ba55e20-800e-4bf6-bf2e-23366cf2ceb1" mediaType="application/json" postQueryString="false">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:endpoint>https://www.test-insurance.com</con:endpoint>
+        <con:request/>
+        <con:originalUri>https://www.test-insurance.com/api/v1/user/</con:originalUri>
+        <con:assertion type="Valid HTTP Status Codes" id="29cfcd15-f903-4ea3-971c-b3c4c86774a6" name="Valid HTTP Status Codes">
+          <con:settings/>
+          <con:configuration>
+            <codes>200</codes>
+          </con:configuration>
+        </con:assertion>
+        <con:assertion type="Response SLA Assertion" id="4ddbf3d4-80e0-4ced-abae-52e3f45c9b7d" name="Response SLA">
+          <con:configuration>
+            <SLA>2000</SLA>
+          </con:configuration>
+        </con:assertion>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:parameters>
+          <con:entry key="id" value="${#[Class Practice#Create User Practice#REST Request]#Response#$['data']['account']['accountId']}"/>
+        </con:parameters>
+        <con:parameterOrder>
+          <con:entry>id</con:entry>
+        </con:parameterOrder>
+        <con:environmentSpec>
+          <con:entry environmentId="4c23f13a-1549-4669-8293-16e9832728e8">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testCase>

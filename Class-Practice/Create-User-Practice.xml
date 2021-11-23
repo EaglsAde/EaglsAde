@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="90d8a408-912b-4c96-938a-b3d2abaf2883" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="Create User Practice" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="90d8a408-912b-4c96-938a-b3d2abaf2883fileName">Create-User-Practice</con:setting>
+  </con:settings>
+  <con:testStep type="datasource" name="Data Source 2" id="5db9da39-d674-4347-a310-011a18b044ae">
+    <con:settings/>
+    <con:config xsi:type="con:DataSourceStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:dataSource type="Data Generator">
+        <con:configuration>
+          <generatedDataCount>10</generatedDataCount>
+          <generatorsTotalNumber>19</generatorsTotalNumber>
+          <lastSelectedProperty>8</lastSelectedProperty>
+          <GeneratorType0>EMAIL</GeneratorType0>
+          <PropertyName0>email</PropertyName0>
+          <repetitionCountemail>0</repetitionCountemail>
+          <repeatValuesemail>false</repeatValuesemail>
+          <GeneratorType1>SET</GeneratorType1>
+          <PropertyName1>Title</PropertyName1>
+          <repetitionCountTitle>0</repetitionCountTitle>
+          <repeatValuesTitle>false</repeatValuesTitle>
+          <ValueFromSetIsSequenceValueTitle>false</ValueFromSetIsSequenceValueTitle>
+          <ValueFromSetStringsTitle>Mr.</ValueFromSetStringsTitle>
+          <ValueFromSetStringsTitle>Mrs.</ValueFromSetStringsTitle>
+          <ValueFromSetStringsTitle>Mss</ValueFromSetStringsTitle>
+          <GeneratorType2>NAME</GeneratorType2>
+          <PropertyName2>FirstName</PropertyName2>
+          <repetitionCountFirstName>0</repetitionCountFirstName>
+          <repeatValuesFirstName>false</repeatValuesFirstName>
+          <NameTypeName2>Full</NameTypeName2>
+          <NameGenderName2>Any</NameGenderName2>
+          <GeneratorType3>NAME</GeneratorType3>
+          <PropertyName3>LastName</PropertyName3>
+          <repetitionCountLastName>0</repetitionCountLastName>
+          <repeatValuesLastName>false</repeatValuesLastName>
+          <NameTypeName3>Full</NameTypeName3>
+          <NameGenderName3>Any</NameGenderName3>
+          <GeneratorType4>SET</GeneratorType4>
+          <PropertyName4>gender</PropertyName4>
+          <repetitionCountgender>0</repetitionCountgender>
+          <repeatValuesgender>false</repeatValuesgender>
+          <ValueFromSetIsSequenceValuegender>false</ValueFromSetIsSequenceValuegender>
+          <ValueFromSetStringsgender>Male</ValueFromSetStringsgender>
+          <ValueFromSetStringsgender>Fmale</ValueFromSetStringsgender>
+          <GeneratorType5>SET</GeneratorType5>
+          <PropertyName5>maritalStatus</PropertyName5>
+          <repetitionCountmaritalStatus>0</repetitionCountmaritalStatus>
+          <repeatValuesmaritalStatus>false</repeatValuesmaritalStatus>
+          <ValueFromSetIsSequenceValuemaritalStatus>false</ValueFromSetIsSequenceValuemaritalStatus>
+          <ValueFromSetStringsmaritalStatus>Married</ValueFromSetStringsmaritalStatus>
+          <ValueFromSetStringsmaritalStatus>Single</ValueFromSetStringsmaritalStatus>
+          <ValueFromSetStringsmaritalStatus>divorce</ValueFromSetStringsmaritalStatus>
+          <GeneratorType6>SET</GeneratorType6>
+          <PropertyName6>employmentStatus</PropertyName6>
+          <repetitionCountemploymentStatus>0</repetitionCountemploymentStatus>
+          <repeatValuesemploymentStatus>false</repeatValuesemploymentStatus>
+          <ValueFromSetIsSequenceValueemploymentStatus>false</ValueFromSetIsSequenceValueemploymentStatus>
+          <ValueFromSetStringsemploymentStatus>employed</ValueFromSetStringsemploymentStatus>
+          <ValueFromSetStringsemploymentStatus>unemployeed</ValueFromSetStringsemploymentStatus>
+          <ValueFromSetStringsemploymentStatus>student</ValueFromSetStringsemploymentStatus>
+          <GeneratorType7>TIME</GeneratorType7>
+          <PropertyName7>dateOfBirth</PropertyName7>
+          <repetitionCountdateOfBirth>0</repetitionCountdateOfBirth>
+          <repeatValuesdateOfBirth>false</repeatValuesdateOfBirth>
+          <DateTimeDataGeneratorCustomFormatdateOfBirth>YYYY-MM-dd</DateTimeDataGeneratorCustomFormatdateOfBirth>
+          <DateTimeDataGeneratorFormatdateOfBirth>Custom</DateTimeDataGeneratorFormatdateOfBirth>
+          <DateTimeDataGeneratorIsSequentdateOfBirth>false</DateTimeDataGeneratorIsSequentdateOfBirth>
+          <DateTimeDataGeneratorStepDaysdateOfBirth>1</DateTimeDataGeneratorStepDaysdateOfBirth>
+          <DateTimeDataGeneratorStepHoursdateOfBirth>1</DateTimeDataGeneratorStepHoursdateOfBirth>
+          <DateTimeDataGeneratorStepMinsdateOfBirth>1</DateTimeDataGeneratorStepMinsdateOfBirth>
+          <DateTimeDataGeneratorStepSecondsdateOfBirth>1</DateTimeDataGeneratorStepSecondsdateOfBirth>
+          <DateTimeDataGeneratorMinDatedateOfBirth>442783803133</DateTimeDataGeneratorMinDatedateOfBirth>
+          <DateTimeDataGeneratorMaxDatedateOfBirth>1578857403133</DateTimeDataGeneratorMaxDatedateOfBirth>
+          <GeneratorType8>SET</GeneratorType8>
+          <PropertyName8>languagePerf</PropertyName8>
+          <repetitionCountlanguagePerf>0</repetitionCountlanguagePerf>
+          <repeatValueslanguagePerf>false</repeatValueslanguagePerf>
+          <ValueFromSetIsSequenceValuelanguagePerf>false</ValueFromSetIsSequenceValuelanguagePerf>
+          <ValueFromSetStringslanguagePerf>En</ValueFromSetStringslanguagePerf>
+          <ValueFromSetStringslanguagePerf>FR</ValueFromSetStringslanguagePerf>
+          <ValueFromSetStringslanguagePerf>Fr</ValueFromSetStringslanguagePerf>
+          <GeneratorType9>COUNTRY</GeneratorType9>
+          <PropertyName9>AddressType</PropertyName9>
+          <repetitionCountAddressType>0</repetitionCountAddressType>
+          <repeatValuesAddressType>false</repeatValuesAddressType>
+          <GeneratorType10>ADDRESS</GeneratorType10>
+          <PropertyName10>AdressLin1</PropertyName10>
+          <repetitionCountAdressLin1>0</repetitionCountAdressLin1>
+          <repeatValuesAdressLin1>false</repeatValuesAdressLin1>
+          <AddressDataGeneratorRestrictLength>false</AddressDataGeneratorRestrictLength>
+          <AddressDataGeneratorMaxLength>20</AddressDataGeneratorMaxLength>
+          <GeneratorType11>CITY</GeneratorType11>
+          <PropertyName11>city</PropertyName11>
+          <repetitionCountcity>0</repetitionCountcity>
+          <repeatValuescity>false</repeatValuescity>
+          <GeneratorType12>STATE</GeneratorType12>
+          <PropertyName12>state</PropertyName12>
+          <repetitionCountstate>0</repetitionCountstate>
+          <repeatValuesstate>false</repeatValuesstate>
+          <StatesCountrystate>United States</StatesCountrystate>
+          <StatesFormatstate>Full</StatesFormatstate>
+          <GeneratorType13>USZIP</GeneratorType13>
+          <PropertyName13>PostalCode</PropertyName13>
+          <repetitionCountPostalCode>0</repetitionCountPostalCode>
+          <repeatValuesPostalCode>false</repeatValuesPostalCode>
+          <USZipCodesDataGeneratorFormatPostalCode>All</USZipCodesDataGeneratorFormatPostalCode>
+          <GeneratorType14>INT</GeneratorType14>
+          <PropertyName14>CountryCode</PropertyName14>
+          <repetitionCountCountryCode>0</repetitionCountCountryCode>
+          <repeatValuesCountryCode>false</repeatValuesCountryCode>
+          <IntegerDataGeneratorMinValueCountryCode>1</IntegerDataGeneratorMinValueCountryCode>
+          <IntegerDataGeneratorMaxValueCountryCode>99</IntegerDataGeneratorMaxValueCountryCode>
+          <IntegerDataGeneratorStepValueCountryCode>1</IntegerDataGeneratorStepValueCountryCode>
+          <IntegerDataGeneratorConsequentValuesCountryCode>true</IntegerDataGeneratorConsequentValuesCountryCode>
+          <GeneratorType15>PHONE</GeneratorType15>
+          <PropertyName15>phoneNumber</PropertyName15>
+          <repetitionCountphoneNumber>0</repetitionCountphoneNumber>
+          <repeatValuesphoneNumber>false</repeatValuesphoneNumber>
+          <PhoneTemplateTypephoneNumber>XXX-XXX-XXXX</PhoneTemplateTypephoneNumber>
+          <GeneratorType16>SET</GeneratorType16>
+          <PropertyName16>PhoneExtension</PropertyName16>
+          <repetitionCountPhoneExtension>0</repetitionCountPhoneExtension>
+          <repeatValuesPhoneExtension>false</repeatValuesPhoneExtension>
+          <ValueFromSetIsSequenceValuePhoneExtension>false</ValueFromSetIsSequenceValuePhoneExtension>
+          <ValueFromSetStringsPhoneExtension>yes</ValueFromSetStringsPhoneExtension>
+          <ValueFromSetStringsPhoneExtension>No</ValueFromSetStringsPhoneExtension>
+          <GeneratorType17>SET</GeneratorType17>
+          <PropertyName17>PhoneTime</PropertyName17>
+          <repetitionCountPhoneTime>0</repetitionCountPhoneTime>
+          <repeatValuesPhoneTime>false</repeatValuesPhoneTime>
+          <ValueFromSetIsSequenceValuePhoneTime>false</ValueFromSetIsSequenceValuePhoneTime>
+          <ValueFromSetStringsPhoneTime>morning</ValueFromSetStringsPhoneTime>
+          <ValueFromSetStringsPhoneTime>Noon</ValueFromSetStringsPhoneTime>
+          <ValueFromSetStringsPhoneTime>Sample 3</ValueFromSetStringsPhoneTime>
+          <GeneratorType18>SET</GeneratorType18>
+          <PropertyName18>PhoneTye</PropertyName18>
+          <repetitionCountPhoneTye>0</repetitionCountPhoneTye>
+          <repeatValuesPhoneTye>false</repeatValuesPhoneTye>
+          <ValueFromSetIsSequenceValuePhoneTye>false</ValueFromSetIsSequenceValuePhoneTye>
+          <ValueFromSetStringsPhoneTye>Home</ValueFromSetStringsPhoneTye>
+          <ValueFromSetStringsPhoneTye>Office</ValueFromSetStringsPhoneTye>
+          <ValueFromSetStringsPhoneTye>Sample 3</ValueFromSetStringsPhoneTye>
+          <escapeSpaceSequence/>
+        </con:configuration>
+      </con:dataSource>
+      <con:shared>true</con:shared>
+      <con:restartShared>true</con:restartShared>
+      <con:property>email</con:property>
+      <con:property>Title</con:property>
+      <con:property>FirstName</con:property>
+      <con:property>LastName</con:property>
+      <con:property>gender</con:property>
+      <con:property>maritalStatus</con:property>
+      <con:property>employmentStatus</con:property>
+      <con:property>dateOfBirth</con:property>
+      <con:property>languagePerf</con:property>
+      <con:property>AddressType</con:property>
+      <con:property>AdressLin1</con:property>
+      <con:property>city</con:property>
+      <con:property>state</con:property>
+      <con:property>PostalCode</con:property>
+      <con:property>CountryCode</con:property>
+      <con:property>phoneNumber</con:property>
+      <con:property>PhoneExtension</con:property>
+      <con:property>PhoneTime</con:property>
+      <con:property>PhoneTye</con:property>
+      <con:restartOnRun>true</con:restartOnRun>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="restrequest" name="REST Request" id="b45e2f43-c4cb-47e5-aa34-48b428859c32">
+    <con:settings/>
+    <con:config service="GetUser" resourcePath="/api/v1/user/{id}" methodName="Method 2" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:restRequest name="REST Request" id="3fe8e3f5-e789-4e42-ba19-9cf663258c70" mediaType="application/json" postQueryString="false">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:endpoint>https://www.test-insurance.com</con:endpoint>
+        <con:request>{\r
+   "primaryPerson" : {\r
+      "email" : "${Data Source 2#email}",\r
+      "title" : "${Data Source 2#Title}",\r
+      "firstName" : "${Data Source 2#FirstName}",\r
+      "lastName" : "${Data Source 2#LastName}",\r
+      "gender" : "${Data Source 2#gender}",\r
+      "maritalStatus" : "${Data Source 2#maritalStatus}",\r
+      "employmentStatus" : "${Data Source 2#employmentStatus}",\r
+      "dateOfBirth" : "${Data Source 2#dateOfBirth}",\r
+      "languagePref" : "${Data Source 2#languagePerf}"\r
+   },\r
+   "primaryPersonMailingAddress" : {\r
+      "addressType" : "${Data Source 2#AddressType}",\r
+      "addressLine1" : "${Data Source 2#AdressLin1}",\r
+      "city" : "${Data Source 2#city}",\r
+      "state" : "${Data Source 2#state}",\r
+      "postalCode" : "${Data Source 2#PostalCode}",\r
+      "countryCode" : "${Data Source 2#CountryCode}"\r
+   },\r
+   "primaryPersonPhone" : {\r
+      "phoneNumber" : "${Data Source 2#phoneNumber}",\r
+      "phoneExtension" : "${Data Source 2#PhoneExtension}",\r
+      "phoneTime" : "${Data Source 2#PhoneTime}",\r
+      "phoneType" : "${Data Source 2#PhoneTye}"\r
+   }\r
+}</con:request>
+        <con:originalUri>https://www.test-insurance.com/api/v1/user/</con:originalUri>
+        <con:assertion type="Valid HTTP Status Codes" id="cab4e4d9-9c43-4d33-bde4-3b6de1ee7eec" name="Valid HTTP Status Codes">
+          <con:settings/>
+          <con:configuration>
+            <codes>200</codes>
+          </con:configuration>
+        </con:assertion>
+        <con:assertion type="Response SLA Assertion" id="9f9eba06-62a3-4ae1-874e-b30f5c8060b0" name="Response SLA">
+          <con:configuration>
+            <SLA>2000</SLA>
+          </con:configuration>
+        </con:assertion>
+        <con:assertion type="JsonPath Match" id="31db70d1-63c8-4231-a9a8-9c7dde2f9645" name="Match content of [code]">
+          <con:configuration>
+            <path>$['meta']['code']</path>
+            <content>200</content>
+            <allowWildcards>false</allowWildcards>
+            <ignoreNamspaceDifferences>false</ignoreNamspaceDifferences>
+            <ignoreComments>false</ignoreComments>
+          </con:configuration>
+        </con:assertion>
+        <con:assertion type="JsonPath Match" id="e4686a7c-7343-4a22-8b3b-4ff78f642ba4" name="Match content of [status]">
+          <con:configuration>
+            <path>$['meta']['status']</path>
+            <content>"success"</content>
+            <allowWildcards>false</allowWildcards>
+            <ignoreNamspaceDifferences>false</ignoreNamspaceDifferences>
+            <ignoreComments>false</ignoreComments>
+          </con:configuration>
+        </con:assertion>
+        <con:assertion type="JsonPath Existence Match" id="3cb4a323-373a-49a9-aa6e-5305b39ac934" name="Check for existence of [accountId]">
+          <con:configuration>
+            <path>$['data']['account']['accountId']</path>
+            <content>true</content>
+            <allowWildcards>false</allowWildcards>
+            <ignoreNamspaceDifferences>false</ignoreNamspaceDifferences>
+            <ignoreComments>false</ignoreComments>
+          </con:configuration>
+        </con:assertion>
+        <con:assertion type="JsonPath Existence Match" id="bc011b95-add8-470d-bc59-f75821c999e1" name="Check for existence of [createDate]">
+          <con:configuration>
+            <path>$['data']['account']['createDate']</path>
+            <content>true</content>
+            <allowWildcards>false</allowWildcards>
+            <ignoreNamspaceDifferences>false</ignoreNamspaceDifferences>
+            <ignoreComments>false</ignoreComments>
+          </con:configuration>
+        </con:assertion>
+        <con:assertion type="JsonPath Match" id="e01011a3-590f-4a47-a045-ac6f7661c26d" name="Match content of [email]">
+          <con:configuration>
+            <path>$['data']['primaryPerson']['email']</path>
+            <content>${REST Request#RawRequest#$['primaryPerson']['email']}</content>
+            <allowWildcards>false</allowWildcards>
+            <ignoreNamspaceDifferences>false</ignoreNamspaceDifferences>
+            <ignoreComments>false</ignoreComments>
+          </con:configuration>
+        </con:assertion>
+        <con:assertion type="JsonPath Match" id="3cebb139-8391-4f5b-bc49-281663b14245" name="Match content of [title]">
+          <con:configuration>
+            <path>$['data']['primaryPerson']['title']</path>
+            <content>${REST Request#RawRequest#$['primaryPerson']['title']}</content>
+            <allowWildcards>false</allowWildcards>
+            <ignoreNamspaceDifferences>false</ignoreNamspaceDifferences>
+            <ignoreComments>false</ignoreComments>
+          </con:configuration>
+        </con:assertion>
+        <con:assertion type="JsonPath Match" id="34ec1f7f-cda1-4745-807f-594165a8aeea" name="Match content of [firstName]">
+          <con:configuration>
+            <path>$['data']['primaryPerson']['firstName']</path>
+            <content>${REST Request#RawRequest#$['primaryPerson']['firstName']}</content>
+            <allowWildcards>false</allowWildcards>
+            <ignoreNamspaceDifferences>false</ignoreNamspaceDifferences>
+            <ignoreComments>false</ignoreComments>
+          </con:configuration>
+        </con:assertion>
+        <con:assertion type="JsonPath Match" id="73ffad2b-5c1a-4652-920c-3bad7d5f674b" name="Match content of [lastName]">
+          <con:configuration>
+            <path>$['data']['primaryPerson']['lastName']</path>
+            <content>${REST Request#RawRequest#$['primaryPerson']['lastName']}</content>
+            <allowWildcards>false</allowWildcards>
+            <ignoreNamspaceDifferences>false</ignoreNamspaceDifferences>
+            <ignoreComments>false</ignoreComments>
+          </con:configuration>
+        </con:assertion>
+        <con:assertion type="JsonPath Match" id="4ca2565f-91f7-41d7-8475-5b316cbfa7da" name="Match content of [gender]">
+          <con:configuration>
+            <path>$['data']['primaryPerson']['gender']</path>
+            <content>${REST Request#RawRequest#$['primaryPerson']['gender']}</content>
+            <allowWildcards>false</allowWildcards>
+            <ignoreNamspaceDifferences>false</ignoreNamspaceDifferences>
+            <ignoreComments>false</ignoreComments>
+          </con:configuration>
+        </con:assertion>
+        <con:assertion type="JsonPath Match" id="cbd66e3f-92c5-4d68-bd33-73f2611881f5" name="Match content of [maritalStatus]">
+          <con:configuration>
+            <path>$['data']['primaryPerson']['maritalStatus']</path>
+            <content>${REST Request#RawRequest#$['primaryPerson']['maritalStatus']}</content>
+            <allowWildcards>false</allowWildcards>
+            <ignoreNamspaceDifferences>false</ignoreNamspaceDifferences>
+            <ignoreComments>false</ignoreComments>
+          </con:configuration>
+        </con:assertion>
+        <con:assertion type="JsonPath Match" id="416e761a-eb06-4fe4-b53b-014af5efbe94" name="Match content of [employmentStatus]">
+          <con:configuration>
+            <path>$['data']['primaryPerson']['employmentStatus']</path>
+            <content>${REST Request#RawRequest#$['primaryPerson']['employmentStatus']}</content>
+            <allowWildcards>false</allowWildcards>
+            <ignoreNamspaceDifferences>false</ignoreNamspaceDifferences>
+            <ignoreComments>false</ignoreComments>
+          </con:configuration>
+        </con:assertion>
+        <con:assertion type="JsonPath Match" id="3e0bf93a-009b-4a9f-9d1d-c2be592bea3d" name="Match content of [dateOfBirth]">
+          <con:configuration>
+            <path>$['data']['primaryPerson']['dateOfBirth']</path>
+            <content>${REST Request#RawRequest#$['primaryPerson']['dateOfBirth']}</content>
+            <allowWildcards>false</allowWildcards>
+            <ignoreNamspaceDifferences>false</ignoreNamspaceDifferences>
+            <ignoreComments>false</ignoreComments>
+          </con:configuration>
+        </con:assertion>
+        <con:assertion type="JsonPath Match" id="afee15b3-7d0a-4c1d-9a75-70333ad33f0d" name="Match content of [languagePref]">
+          <con:configuration>
+            <path>$['data']['primaryPerson']['languagePref']</path>
+            <content>${REST Request#RawRequest#$['primaryPerson']['languagePref']}</content>
+            <allowWildcards>false</allowWildcards>
+            <ignoreNamspaceDifferences>false</ignoreNamspaceDifferences>
+            <ignoreComments>false</ignoreComments>
+          </con:configuration>
+        </con:assertion>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:parameters/>
+        <con:parameterOrder>
+          <con:entry/>
+        </con:parameterOrder>
+        <con:environmentSpec>
+          <con:entry environmentId="4c23f13a-1549-4669-8293-16e9832728e8">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testCase>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="720a9999-0fce-4208-9daf-902add98c487" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="Updata User" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="720a9999-0fce-4208-9daf-902add98c487fileName">Updata-User</con:setting>
+  </con:settings>
+  <con:testStep type="restrequest" name="REST Request" id="f25b5e61-063f-47f1-94f2-ba854fa3fd87">
+    <con:settings/>
+    <con:config service="GetUser" resourcePath="/api/v1/user/{id}" methodName="Method 3" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:restRequest name="REST Request" id="06f85f3e-0a5e-4b4c-b9db-67f79525e0a0" mediaType="application/json" postQueryString="false">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:endpoint>https://www.test-insurance.com</con:endpoint>
+        <con:request/>
+        <con:originalUri>https://www.test-insurance.com/api/v1/user/5054</con:originalUri>
+        <con:assertion type="Valid HTTP Status Codes" id="da5be427-9066-44bc-9fb4-1949ff67029a" name="Valid HTTP Status Codes">
+          <con:settings/>
+          <con:configuration>
+            <codes>200</codes>
+          </con:configuration>
+        </con:assertion>
+        <con:assertion type="Response SLA Assertion" id="6f1eda21-499b-490c-88c7-d69ce03d5e2b" name="Response SLA">
+          <con:configuration>
+            <SLA>2000</SLA>
+          </con:configuration>
+        </con:assertion>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:parameters>
+          <con:entry key="id" value="${#[Class Practice#Get User Practice#REST Request]#Response#$['data']['account']['accountId']}"/>
+        </con:parameters>
+        <con:parameterOrder>
+          <con:entry>id</con:entry>
+          <con:entry/>
+        </con:parameterOrder>
+        <con:environmentSpec>
+          <con:entry environmentId="4c23f13a-1549-4669-8293-16e9832728e8">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testCase>
